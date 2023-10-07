@@ -1,0 +1,125 @@
+:root {
+    --sun-size: 60px;
+    --mercure-size: 8px;
+    --venus-size: 18px;
+    --earth-size: 16px;
+    --mars-size: 14px;
+    --jupiter-size: 36px;
+    --saturn-size: 30px;
+    --uranus-size: 26px;
+    --neptune-size: 24px;
+}
+
+
+body {
+    background-image: url(stars.jpg);
+    background-size:cover;
+}
+
+/* -----------------------------------------------Gestion des bouton----------------------------------------------- */
+
+.boutons-planetes {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+button{
+    margin: 0 8px;
+    background-color: #0a1f5a27;
+    color: white;
+    font-size: large;
+    padding: 5px 8px;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #f9c05f;
+}
+
+
+/*------------------------------------------------------ Solar system ------------------------------------------------------*/
+
+.planet {
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.sun {
+    background-image: url(soleil.jpg);
+    width: var(--sun-size);
+    height: var(--sun-size);
+    background-size: 100%;
+}
+
+.orbit {
+    position: absolute;
+    width: var(--radius);
+    height: var(--radius);
+    border: 1px dashed rgba(99, 99, 109, 0.736); 
+    border-radius: 50%; /* Pour créer une orbite circulaire */
+    left: calc(50% - var(--radius) / 2);
+    top: calc(50% - var(--radius) / 2);
+  }
+  
+
+/* ------------------------------------Planets ------------------------------------------------------*/
+
+.mercury {
+    background-image: url(mercure.png);
+    background-size: 100%;
+    width: var(--mercure-size);
+    height: var(--mercure-size);
+}
+
+.venus {
+    background-image: url(venus.png);
+    background-size: 100%;
+    width: var(--venus-size);
+    height: var(--venus-size);
+}
+
+.earth {
+    background-image: url(terre.png);
+    background-size: 100%;
+    width: var(--earth-size);
+    height: var(--earth-size);
+}
+
+.mars {
+    background-image: url(mars.png);
+    background-size: 100%;
+    width: var(--mars-size);
+    height: var(--mars-size);
+}
+
+.jupiter {
+    background-image: url(jupiter.png);
+    background-size: 100%;
+    width: var(--jupiter-size);
+    height: var(--jupiter-size);
+}
+
+.saturn {
+    background-image: url(saturne.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: var(--saturn-size);
+    height: var(--saturn-size);
+}
+
+.uranus {
+    background-image: url(uranus.png);
+    background-size: 100%;
+    width: var(--uranus-size);
+    height: var(--uranus-size);
+}
+
+.neptune {
+    background-image: url(neptune.png);
+    background-size: 100%;
+    width: var(--neptune-size);
+    height: var(--neptune-size);
+}
